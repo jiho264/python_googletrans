@@ -2,7 +2,7 @@ pip install googletrans==4.0.0-rc1\
 pip install tqdm
 
 - Translate English into Korean.
-- It uses Google Translation in Python code.
+- It uses Google Translate in Python code.
 
 * File path must be edited. 
 

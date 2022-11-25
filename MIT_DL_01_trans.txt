@@ -1,0 +1,1089 @@
+okay good afternoon everyone and thank you all for joining today i'm super excited to welcome you all to
+좋아 잘 오후 여러분, 오늘 가입 해 주셔서 감사합니다. 여러분 모두를 환영하게되어 매우 기쁩니다.
+0:16
+mit 6s191 introduction to deep learning my name is alexander amini and i'm going to be your
+MIT 6S191 딥 러닝 소개 제 이름은 Alexander Amini이고 나는 당신이 될 것입니다.
+0:23
+instructor this year along with ava soleimani now 6s191 is a
+올해 Ava Soleimani와 함께 6S191은
+0:28
+really fun and fast-paced class and for those of you who are not really familiar
+정말 재미 있고 빠르게 진행되는 수업과 정말 익숙하지 않은 사람들을 위해
+0:33
+i'll start by giving you a bit of background on on what deep learning is and what this
+딥 러닝이 무엇인지 그리고 이것이 무엇인지에 대한 배경 지식을 제공하는 것으로 시작합니다.
+0:38
+class is all about just because i think we're going to cover a ton of material in today's class and only one week this
+수업은 오늘 수업에서 수많은 자료를 다룰 것이라고 생각하기 때문입니다.
+0:44
+class is in total and in just that one week you're going to learn about the foundations of this really remarkable field of deep
+수업은 총체적이며 일주일 만 에이 놀라운 Deep 의이 분야의 기초에 대해 배울 것입니다.
+0:52
+learning and get hands-on experience and practical knowledge and practical
+배우고 실습 경험과 실용적인 지식과 실용
+0:59
+guides through these software labs using tensorflow now i like to tell people that 6s 191 is like
+Tensorflow를 사용하여 이러한 소프트웨어 실험실을 안내합니다. 이제 6s 191이 사람들에게 말하고 싶습니다.
+1:05
+a one week boot camp in deep learning and that's because of the amount of information that you're going to learn
+딥 러닝에서 일주일 부팅 캠프와 배울 수있는 정보의 양 때문입니다.
+1:12
+over the course of this one week and i'll start by just asking a very simple question and what is deep
+이 일주일 동안 매우 간단한 질문과 깊이가 무엇인지 물어 보면서 시작하겠습니다.
+1:18
+learning right so instead of giving you some boring technical answer and description of what deep learning is
+딥 러닝이 무엇인지에 대한 지루한 기술 답변과 설명을 제공하는 대신
+1:25
+and the power of deep learning and why this class is so amazing i'll start by actually showing you a
+그리고 딥 러닝의 힘 과이 수업이 왜 그렇게 놀라운 지 실제로 당신에게 보여줄 것입니다.
+1:30
+video of someone else doing that instead so let's take a look at this first
+대신 다른 사람의 비디오를 대신 해 봅시다.
+1:37
+hi everybody and welcome to mip fitness 191
+안녕하세요 여러분, MIP Fitness 191에 오신 것을 환영합니다
+1:43
+the official introductory course on deep learning taught here at mit
+MIT에서 가르치는 딥 러닝에 관한 공식 입문 과정
+1:49
+reflecting is revolutionizing so many views from robotics to medicine and
+반영은 로봇 공학에서 의학에 이르기까지 많은 견해를 혁명하고 있습니다.
+1:56
+everything in between you'll learn the fundamentals of this field and how you can build some of
+이 분야의 기본 사항과 일부를 구축 할 수있는 방법을 배웁니다.
+2:04
+these incredible algorithms in fact this entire speech and video are not
+이 놀라운 알고리즘은 실제로이 전체 연설과 비디오는 아닙니다.
+2:12
+real and were created using deep learning and artificial intelligence
+딥 러닝 및 인공 지능을 사용하여 만들어졌습니다.
+2:19
+and in this class you'll learn how it has been an honor to speak with you
+그리고이 수업에서 당신은 당신과 이야기하는 것이 어떻게 영광인지 배웁니다.
+2:24
+today and i hope you enjoy the course
+오늘 그리고 나는 당신이 코스를 즐기시기 바랍니다
+2:31
+so in case you can tell that video was actually not real at all that was not real video or real audio and in fact the
+따라서 비디오가 실제 비디오 나 실제 오디오가 아닌 사실이 아니라고 말할 수있는 경우
+2:38
+audio you heard was actually even purposely degraded even further just by us to make it look
+당신이 들었던 오디오는 실제로 우리에 의해 의도적으로 더욱 악화되었다.
+2:44
+and sound not as real and avoid any potential misuse now this is really a testament to the power of deep learning
+그리고 실제적인 소리가 아니고 잠재적 오용을 피하십시오. 이제 이것은 실제로 딥 러닝의 힘에 대한 증거입니다.
+2:52
+uh to create such high quality and highly realistic videos and quality models for generating those
+UH는 이러한 고품질의 현실적인 비디오와 품질 모델을 생성하기위한 고품질 모델을 만들기 위해
+2:59
+videos so even with this purposely degraded audio that intro that we always
+비디오는이 의도적으로 저하 된 오디오를 사용하여 우리가 항상 우리가 소개합니다.
+3:05
+show that intro and we always get a ton of really exciting feedback from our students and how excited they are to
+인트로를 보여주고 우리는 항상 학생들로부터 정말 흥미로운 피드백을 받고 그들이 얼마나 흥분하는지 보여줍니다.
+3:10
+learn about the techniques and the algorithms that drive forward that type of progress
+이러한 유형의 진행 상황을 추진하는 기술과 알고리즘에 대해 알아보십시오.
+3:16
+and the progress in deep learning is really remarkable especially in the past few years the ability of deep learning
+그리고 딥 러닝의 진보는 특히 지난 몇 년 동안 딥 러닝의 능력
+3:22
+to generate these very realistic uh data and data sets extends far beyond generating realistic
+이러한 매우 현실적인 데이터와 데이터 세트를 생성하려면 현실적인 생성 이상으로 확장됩니다.
+3:29
+videos of people like you saw in this example now we can use deep learning to generate full simulated environments of the real
+이 예에서 본 사람들의 비디오 이제 우리는 딥 러닝을 사용하여 실제 시뮬레이션 환경을 생성 할 수 있습니다.
+3:36
+world so here's a bunch of examples of fully simulated virtual worlds generated
+세상에 여기에 완전히 시뮬레이션 된 가상 세계의 예가 있습니다.
+3:42
+using real data and the power and powered by deep learning and computer vision so this simulator is actually
+실제 데이터와 전력을 사용하고 딥 러닝 및 컴퓨터 비전으로 구동되는이 시뮬레이터는 실제로
+3:48
+fully data driven we call it and within these virtual worlds you can actually place virtual simulated cars
+완전한 데이터 중심 우리는 그것을 호출하고 이러한 가상 세계에서 실제로 가상 시뮬레이션 된 자동차를 배치 할 수 있습니다.
+3:55
+for training autonomous vehicles for example this simulator was actually designed here at mit and when we created it we
+예를 들어 자율 주행 차를 훈련하기 위해이 시뮬레이터는 실제로 MIT에서 여기에서 설계되었으며 우리가 만들 때 우리는
+4:02
+actually showed the first occurrence of using a technique called
+실제로라는 기술을 사용하는 첫 번째 사건을 보여주었습니다.
+4:07
+end-to-end training using reinforcement learning and training a autonomous vehicle
+강화 학습 및 자율 차량 훈련을 사용한 엔드 투 엔드 교육
+4:12
+entirely in simulation using reinforcement learning and having that vehicle controller deployed directly
+강화 학습과 차량 컨트롤러를 직접 배치하는 시뮬레이션에 전적으로 시뮬레이션
+4:17
+onto the real world on real roads on a full-scale autonomous car now we're actually releasing this
+본격적인 자율 자동차의 실제 도로에있는 실제 세계에 이제 우리는 실제로 이것을 공개하고 있습니다.
+4:23
+simulator open source this week so all of you as students in 191 will have
+이번 주 시뮬레이터 오픈 소스 그래서 191 년 학생들은 모두가
+4:28
+first access to not only use this type of simulator as part of your software labs and generate these types of
+먼저이 유형의 시뮬레이터를 소프트웨어 실험실의 일부로 사용하고 이러한 유형의 유형을 생성 할 수 있습니다.
+4:34
+environments but also to train your own autonomous controllers to drive in these
+환경뿐만 아니라 자율 컨트롤러를 훈련시키기 위해
+4:40
+types of environments that can be directly transferred to the real world and in fact in software lab three you'll
+현실 세계로 직접 전송할 수있는 환경 유형 및 실제로 소프트웨어 랩에서 3 번
+4:45
+get the ability to do exactly this and this is super exciting addition to success one nine this year
+정확히 이것을 할 수있는 능력을 얻고 올해 성공 1에 매우 흥미로운 추가입니다.
+4:52
+because all of you as students will be able to actually enter this competition where you can propose or submit your
+학생들로서의 모든 사람들은 실제로이 대회에 참가할 수 있기 때문에 귀하가 제안하거나 제출할 수 있습니다.
+4:58
+best deep learning models to drive in these simulated environments and the winners will actually be invited
+이러한 시뮬레이션 된 환경에서 추진할 수있는 최고의 딥 러닝 모델과 수상자는 실제로 초대됩니다.
+5:04
+and given the opportunity to deploy their models on board a full-scale self-driving car
+그리고 본격적인 자율 주행 자동차에 모델을 배치 할 수있는 기회가 주어졌습니다.
+5:09
+in the real world so we're really excited about this and i'll talk more about that in the software lab section
+현실 세계에서 우리는 이것에 대해 정말로 흥분하고 소프트웨어 실험실 섹션에서 더 많이 이야기 할 것입니다.
+5:15
+so now hopefully all of you are super excited about what this class will teach you so hopefully let's start now by
+이제 여러분 모두이 수업이 당신에게 무엇을 가르쳐 줄 것에 대해 매우 흥분되기를 바랍니다.
+5:22
+taking a step back and answering or defining some of these terminologies that you've probably been hearing a lot
+한 걸음 물러서서 아마도 많이 듣고 있었던이 용어 중 일부에 대답하거나 정의합니다.
+5:27
+about so i'll start with the word intelligence intelligence is the ability to process
+그래서 나는 지능 지능이라는 단어로 시작할 것입니다.
+5:33
+information take as input a bunch of information and make some informed future decision or prediction
+정보는 많은 정보를 입력하고 정보에 입각 한 미래의 결정 또는 예측을합니다.
+5:39
+so the field of artificial intelligence is simply the ability for computers to do that to take as input a bunch of
+그래서 인공 지능 분야는 단순히 컴퓨터가 입력하는 것으로 취할 수있는 능력입니다.
+5:46
+information and use that information to inform some future situations or decision making
+정보 및 해당 정보를 사용하여 미래 상황이나 의사 결정을 알립니다.
+5:53
+now machine learning is a subset of ai or artificial intelligence specifically
+이제 기계 학습은 AI 또는 인공 지능의 하위 집합입니다.
+5:58
+focused on teaching a computer or teaching an algorithm how to learn from experiences how to
+컴퓨터를 가르치거나 알고리즘을 가르치는 데 중점을 두었습니다.
+6:03
+learn from data without being explicitly programmed how to process that input information
+입력 정보를 처리하는 방법을 명시 적으로 프로그래밍하지 않고 데이터에서 배우기
+6:10
+now deep learning is simply a subset of machine learning as a whole specifically focused on the use of neural networks
+이제 딥 러닝은 단순히 신경망의 사용에 중점을 둔 전체 기계 학습의 하위 집합입니다.
+6:16
+which you're going to learn about in this class to automatically extract useful features and patterns in the raw data and use
+이 클래스에서 배울 수있는 방법은 원시 데이터 및 사용에서 유용한 기능과 패턴을 자동으로 추출합니다.
+6:22
+those patterns or features to inform the learning tasks so to inform those decisions you're going to
+학습 과제를 알리는 패턴이나 기능을 통해 귀하가 결정한 결정에 알리기 위해
+6:28
+try to first learn the features and learn the inputs that determine how to complete that task
+먼저 기능을 배우고 해당 작업을 완료하는 방법을 결정하는 입력을 배우십시오.
+6:34
+and that's really what this class is all about it's how we can teach algorithms teach computers how to learn a task directly from raw
+그리고 그것은 실제로이 수업의 모든 것입니다. 알고리즘을 가르치는 방법은 컴퓨터를 가르치는 방법을 원료에서 직접 배우는 방법을 가르치는 방법입니다.
+6:41
+data so just be giving a data set of a bunch of examples how can we teach a computer to also complete that task like
+데이터는 단지 많은 예제의 데이터 세트를 제공하여 컴퓨터가 어떻게 그와 같은 작업을 완료하도록 가르 칠 수 있습니까?
+6:49
+the like we see in the data set now this course is split between technical lectures and software labs and
+데이터 세트에서 볼 수있는 것처럼 이제이 과정은 기술 강의와 소프트웨어 실험실에서 나뉘어져 있습니다.
+6:56
+we'll have several new updates in this year in this year's edition of the class especially in some of the later lectures
+올해 올해에 올해에 몇 가지 새로운 업데이트가있을 것입니다.
+7:02
+in this first lecture we'll cover the foundations of deep learning and neural networks starting with the building
+이 첫 강의에서 우리는 건물부터 시작하여 딥 러닝 및 신경망의 기초를 다룹니다.
+7:08
+blocks of of neural networks which is just a single neuron and finally we'll conclude with some really exciting guest
+단일 뉴런 인 신경망의 블록은 정말 흥미 진진한 손님으로 결론을 내릴 것입니다.
+7:16
+lectures were and student projects from all of you and as part of the final prize
+강의는 여러분 모두의 학생 프로젝트와 최종 상의 일부였습니다.
+7:21
+competition that you'll be eligible to win a bunch of exciting prizes and awards
+흥미 진진한 상과 상을 수상 할 자격이있는 경쟁
+7:28
+so for those of you who are taking this class for credit you'll have two options to fulfill your
+신용을 위해이 수업을 수강하는 분들을 위해
+7:33
+credit requirement the first option is a project proposal where you'll get to
+신용 요구 사항 첫 번째 옵션은 갈 수있는 프로젝트 제안입니다.
+7:39
+work either individually or in groups of up to four people and develop some cool
+개별적으로 또는 최대 4 명으로 구성된 그룹으로 일하고 시원함을 개발합니다.
+7:44
+new deep learning idea doing so will make you eligible for some of these uh
+그렇게하는 새로운 딥 러닝 아이디어
+7:50
+awesome sponsored prizes now we realize that one week is a super short and condensed amount of time to
+굉장한 후원 상가 이제 우리는 일주일이 매우 짧고 압축 된 시간이라는 것을 알고 있습니다.
+7:56
+make any tangible code progress on a deep learning progress
+딥 러닝 진행 상황에서 실질적인 코드 진행 상황
+8:02
+so what we're actually going to be judging you here on is not your results but other rather the novelty of your
+그래서 우리가 실제로 당신을 여기에서 판단 할 것은 당신의 결과가 아니라 다른 당신의 참신함입니다.
+8:09
+ideas and the ability that we believe that you could actually execute these ideas in practice given the the state of the art
+예술의 상태를 감안할 때 실제로 이러한 아이디어를 실행할 수 있다고 생각하는 아이디어와 능력
+8:16
+today now on the last day of class we'll give you all a three-minute
+오늘은 이제 수업 마지막 날에 우리는 모두 3 분을 줄 것입니다.
+8:21
+presentation where your group can present your idea and uh win an award potentially and
+당신의 그룹이 당신의 아이디어를 발표 할 수 있고 UH가 잠재적으로 상을 수상한 프레젠테이션
+8:29
+there's actually an art i think to presenting an idea in such a short amount of time that we're also going to be kind of judging you on to see how
+실제로 짧은 시간 안에 아이디어를 제시하려는 예술이 있습니다.
+8:36
+quickly and effectively you can convey those ideas now the second option to fill your grade requirement is just to write a one-page
+신속하고 효과적으로 해당 아이디어를 전달할 수 있습니다. 이제 등급 요구 사항을 채우는 두 번째 옵션은 단지 한 페이지를 작성하는 것입니다.
+8:42
+essay on a review of any deep learning paper and this will be due on the last thursday of the class
+딥 러닝 논문의 검토에 대한 에세이는 수업의 마지막 목요일에 예정됩니다.
+8:50
+now in addition to the final project prizes we'll also be awarding prizes for the top lab submissions for each of the
+이제 최종 프로젝트 상품 외에도 각각의 최고 실험실 제출에 대한 상을 수여 할 것입니다.
+8:56
+three labs and like i mentioned before this year we're also holding a special prize for lab 3
+3 개의 실험실과 올해 전에 언급했듯이 우리는 또한 실험실 3에 대한 특별 상을 수상했습니다.
+9:01
+where students will be able to deploy their results onto a full-scale self-driving car in the real world
+학생들이 현실 세계의 본격적인 자율 주행 차에 결과를 배치 할 수있는 곳
+9:08
+for support in this class please post all of your questions to piazza check out the course website for announcements
+이 수업의 지원은 모든 질문을 Piazza에 게시하십시오. 공지 사항은 코스 웹 사이트를 확인하십시오.
+9:14
+the course canvas also for announcements and digital recordings of the lectures
+강의의 공지 및 디지털 녹음을위한 코스 캔버스
+9:19
+and labs will be available on canvas shortly after each of the each of the classes
+각 수업 각각 직후 캔버스에서 실험실이 제공됩니다.
+9:25
+so this course has an incredible team that you can reach out to if you ever have any questions either through canvas
+이 과정에는 캔버스를 통해 질문이 있으면 연락 할 수있는 놀라운 팀이 있습니다.
+9:31
+or through the email list at the bottom of the slide feel free to reach out and we really want to give a huge shout out and thanks
+또는 슬라이드 하단의 이메일 목록을 통해 자유롭게 연락하십시오. 우리는 정말 큰 소리를 내고 감사합니다.
+9:38
+to all of our sponsors who without this who without their support this class would not be possible this is our fifth
+이 수업을지지하지 않는 사람 없이는이 수업이 가능하지 않은 모든 후원자에게 이것이 우리의 다섯 번째입니다.
+9:44
+year teaching the class and we're super excited to be back again and teaching such a remarkable field and exciting
+수업을 가르치고 우리는 다시 돌아와서 놀라운 분야와 흥미 진진한 것을 가르치게되어 매우 기쁩니다.
+9:50
+content so now let's start with some of the exciting stuff now that we've covered
+콘텐츠 그래서 이제 우리가 다루었던 지금 흥미로운 것들을 시작합시다.
+9:55
+all of the logistics of the class right so let's start by asking ourselves a question
+수업의 모든 물류는 스스로에게 질문을하면서 시작합시다.
+10:01
+why do we care about this and why did all of you sign up to take this class why do you care about deep learning
+왜 우리는 이것에 관심을 가지고 있고 왜 당신 모두 가이 수업을 듣기 위해 가입 한 이유는 무엇입니까?
+10:07
+well traditional machine learning algorithms typically operate by defining a set of
+전통적인 기계 학습 알고리즘은 일반적으로 일련의 세트를 정의하여 작동합니다.
+10:12
+rules or features in the environment in the data right so usually these are hand engineered right
+데이터의 환경의 규칙 또는 기능이므로 일반적으로 수작업으로 조작됩니다.
+10:19
+so a human will look at the data and try to extract some hand engineered features from the data now in deep learning we're
+그래서 인간은 데이터를보고 딥 러닝에서 데이터에서 손 공학 기능을 추출하려고 노력할 것입니다.
+10:26
+actually trying to do something a little bit different the key idea of deep learning is that these features are
+실제로 조금 다른 것을하려고 노력하는 딥 러닝의 핵심 아이디어는 이러한 기능이
+10:33
+going to be learned directly from the data itself in a hierarchical manner so
+데이터 자체에서 계층 적 방식으로 직접 배우게됩니다.
+10:38
+this means that given a data set let's say a task to detect faces for example
+즉, 데이터 세트가 주어지면 예를 들어면을 감지하는 작업을 가정 해 봅시다.
+10:44
+can we train a deep learning model to take as input a face and start to detect the face by first detecting edges for
+우리는 딥 러닝 모델을 훈련하여 얼굴을 입력하고 가장자리를 먼저 감지하여 얼굴을 감지하기 시작할 수 있습니까?
+10:51
+example very low level features building up those edges to build eyes and noses and mouths
+예제 매우 낮은 수준의 특징은 눈과 코와 입을 쌓기 위해 가장자리를 쌓아냅니다.
+10:57
+and then building up some of those smaller components of faces into larger facial structure features
+그리고 얼굴의 작은 구성 요소 중 일부를 더 큰 얼굴 구조 특징으로 구축합니다.
+11:03
+so as you go deeper and deeper into a neural network architecture you'll actually see its ability to capture
+신경망 아키텍처에 더 깊고 깊이 들어갈 때 실제로 캡처 할 수있는 능력이 있습니다.
+11:08
+these types of hierarchical features and that's the goal of deep learning compared to machine learning is actually
+이러한 유형의 계층 적 특징은 기계 학습에 비해 딥 러닝의 목표입니다.
+11:13
+the ability to learn and extract these features to perform machine learning on them
+기계 학습을 수행하기 위해 이러한 기능을 배우고 추출하는 능력
+11:20
+now actually the fundamental building blocks of deep learning and their underlying algorithms have actually existed for decades so why are we
+이제 실제로 딥 러닝의 기본 빌딩 블록과 그 기본 알고리즘은 실제로 수십 년 동안 존재 해 왔으므로 왜 우리는
+11:26
+studying this now well for one data has become much more prevalent so data is
+하나의 데이터에 대해 지금 이것을 잘 연구하는 것은 훨씬 더 널리 퍼져서 데이터는
+11:32
+really the driving power of a lot of these algorithms and today we're living in the world of big data where we have
+정말 많은 알고리즘의 주도력과 오늘날 우리는 우리가 가진 빅 데이터의 세계에 살고 있습니다.
+11:38
+more data than ever before now second these models and these algorithms
+그 어느 때보 다 더 많은 데이터가 두 번째 로이 모델과 이러한 알고리즘
+11:43
+neural networks are extremely and massively parallelizable they can benefit tremendously from and
+신경망은 극도로 대규모 병렬화 가능합니다.
+11:51
+they have benefited tremendously from modern advances in gpu architectures that we have experienced over the past
+그들은 우리가 과거에 경험했던 GPU 아키텍처의 현대 발전으로부터 엄청나게 혜택을 받았습니다.
+11:57
+decade right and these these advances these types of gpu architecture simply did not exist when we think about when
+10 년 동안 이런 유형의 GPU 아키텍처는 우리가 언제 생각할 때 단순히 존재하지 않았습니다.
+12:04
+these algorithms were detected in and created excuse me in for example the
+이 알고리즘은 예를 들어
+12:10
+neuron the idea for the foundational neuron was created in almost 1960. so
+뉴런 기초 뉴런에 대한 아이디어는 거의 1960 년에 만들어졌습니다.
+12:15
+when you think back to 1960 we simply did not have the compute that we have today and finally due to amazing open
+당신이 1960 년으로 되돌아 갈 때 우리는 단순히 우리가 가지고있는 컴퓨팅이 없었고 마침내 놀라운 오픈으로 인해
+12:22
+source toolboxes like tensorflow we're able to actually build and deploy these algorithms
+TensorFlow와 같은 소스 도구 상자 실제로 이러한 알고리즘을 빌드하고 배포 할 수 있습니다.
+12:29
+and these models have become extremely streamlined so let's start with the fundamental
+그리고이 모델들은 매우 간소화되었으므로 기본부터 시작합시다
+12:34
+building block of a neural network and that is just a single neuron now the idea of a single neuron or let's
+신경망의 빌딩 블록과 그것은 단일 뉴런 일 뿐이며 이제 단일 뉴런 또는하자
+12:41
+call this a perceptron is actually extremely intuitive let's start
+이것을 Perceptron이라고 부르십시오. 실제로 매우 직관적입니다.
+12:46
+by defining how a single neuron takes as input information and it outputs a prediction
+단일 뉴런이 입력 정보로 취하는 방법을 정의하여 예측을 출력합니다.
+12:53
+okay so just looking at its forward pass it's forward prediction call from inputs on the left to outputs on the right
+좋아, 앞으로 패스를 보면 왼쪽의 입력에서 오른쪽 출력까지의 전진 예측 호출입니다.
+13:00
+so we define a set of inputs let's call them x1 to xm now each of these numbers on the left in
+그래서 우리는 입력 세트를 정의합니다. 이제 x1에서 xm이라고 부릅니다.
+13:06
+the blue circles are multiplied by their corresponding weight and then added all together
+파란색 원에는 해당 무게를 곱한 다음 모두 함께 추가합니다.
+13:12
+we take this single number that comes out of this edition and pass it through a nonlinear activation function we call
+우리는이 판에서 나오는이 단일 번호를 가져 와서 우리가 호출하는 비선형 활성화 기능을 통해 전달합니다.
+13:17
+this the activation function and we'll see why in a few slides and the output of that function is going to give us our
+이것은 활성화 함수이며 우리는 몇 가지 슬라이드와 그 기능의 출력이 우리에게 우리에게 우리에게 줄 이유를 볼 수 있습니다.
+13:24
+our prediction y well this is actually not entirely correct i forgot one piece of detail
+우리의 예측 y 글쎄, 이것은 실제로 완전히 정확하지 않습니다.
+13:31
+here we also have a bias term which here i'm calling w0 sometimes you also see it
+여기에 우리는 또한 여기에 W0이라고 부르는 편견이 있습니다.
+13:36
+as the letter b and the bias term allows us to shift the input to our activation function to
+문자 B와 바이어스 용어로 입력을 활성화 함수로 전환 할 수 있습니다.
+13:42
+the left or to the right now on the right side here you can actually see this diagram on the left illustrated and
+여기 오른쪽에있는 왼쪽 또는 오른쪽에있는 것은 실제로 왼쪽 그림 에서이 다이어그램을 볼 수 있으며
+13:49
+written out in mathematical equation form as a single equation and we can actually rewrite this equation using
+수학적 방정식 형태로 단일 방정식으로 작성되며 실제로이 방정식을 다시 작성할 수 있습니다.
+13:56
+linear algebra in terms of vectors and dot products so let's do that here now we're going to
+벡터와 도트 제품의 측면에서 선형 대수는 지금 여기에 할 것입니다.
+14:02
+collapse x1 to xm into a single vector called capital x and capital w will denote the vector of
+X1에서 XM을 자본 X라는 단일 벡터로 붕괴시키고 Capital W는 벡터를 나타냅니다.
+14:10
+the corresponding weights w1 to wm the output here is obtained by taking their dot product
+해당 가중치 W1에서 WM에서 출력은 DOT 제품을 복용하여 얻습니다.
+14:16
+adding a bias and applying this non-linearity and that's our output y
+바이어스를 추가 하고이 비선형 성을 적용하면 그것이 우리의 출력 y입니다.
+14:22
+so now you might be wondering the only missing piece here is what is this activation function right
+이제 여기서 누락 된 부분 이이 활성화 기능이 올바른 것이 무엇인지 궁금 할 것입니다.
+14:29
+well i said it's a nonlinear function but what does that actually mean here's an example of one common function that
+글쎄, 나는 그것이 비선형 기능이라고 말했지만 실제로는 실제로 여기에 하나의 일반적인 기능의 예가 있습니다.
+14:34
+people use as an activation function on the bottom right this is called the sigmoid function
+사람들은 오른쪽 하단의 활성화 함수로 사용하여 Sigmoid 기능이라고합니다.
+14:40
+and it's defined mathematically above its plot here in fact there are many different types
+그리고 그것은 수학적으로 그 줄거리보다 정의되어 있습니다. 실제로 여러 가지 유형이 있습니다.
+14:46
+of nonlinear activation functions used in neural networks here are some common ones and throughout this entire
+신경망에서 사용되는 비선형 활성화 기능의 일부 일반적인 것과이 전체에 걸쳐
+14:52
+presentation you'll also see what these tensorflow code blocks on the bottom
+프레젠테이션 당신은 또한 바닥 의이 텐서 플로 코드 블록을 볼 수 있습니다.
+14:57
+part of the screen just to briefly illustrate how you can take the concepts the technical concepts that you're
+화면의 일부는 단지 당신이 당신이하는 기술 개념을 개념을 취할 수있는 방법을 간략하게 설명합니다.
+15:03
+learning as part of this lecture and extend it into practical software right
+이 강의의 일환으로 학습하고 실용적인 소프트웨어로 확장
+15:09
+so these tensorflow code blocks are going to be extremely helpful for some of your software labs to kind of show the connection and bridge the connection
+따라서 이러한 TensorFlow 코드 블록은 일부 소프트웨어 랩이 연결을 표시하고 연결을 연결하는 데 매우 도움이됩니다.
+15:15
+between the foundation set up for the lectures and the practical side with the labs
+강의를위한 재단과 실험실과의 실용적인 측면 사이
+15:21
+now the sigmoid activation function which you can see on the left hand side is popular like i said largely because
+이제 왼쪽에서 볼 수있는 Sigmoid 활성화 기능은 내가 말한 것처럼 인기가 있습니다.
+15:27
+it's the it's one of the few functions in deep learning that outputs values between zero and one
+그것은 딥 러닝에서 몇 가지 기능 중 하나입니다. 0과 1 사이의 값을 출력합니다.
+15:34
+right so this makes it extremely suitable for modeling things like probabilities because probabilities are also existing in the range between zero
+맞아 확률은 0 사이의 범위에도 존재하기 때문에 확률과 같은 모델링에 매우 적합합니다.
+15:40
+and one so if we want the output of probability we can simply pass it through a sigmoid function and that will give us something that resembles the
+그리고 우리가 확률의 출력을 원한다면 우리는 단순히 sigmoid 함수를 통해 그것을 전달할 수 있고 우리에게 닮은 것을 줄 수 있습니다.
+15:47
+probability that we can use to train with now in modern deep learning neural networks it's also very common to use
+현대 딥 러닝 신경망에서 지금 훈련하는 데 사용할 수있는 확률은 또한 사용하는 것이 매우 일반적입니다.
+15:53
+what's called the relu function and you can see an example of this on the right and this is extremely popular it's a
+Relu 기능이라고하며 오른쪽에 이것의 예를 볼 수 있으며 이것은 매우 인기가 있습니다.
+15:58
+piecewise function with a single non-linearity at x equals 0.
+x에서 단일 비선형 성을 갖는 부분 기능은 0과 같습니다.
+16:04
+now i hope all of you are kind of asking this question to yourselves why do you even need activation functions what's
+이제 여러분 모두 가이 질문을 스스로에게 묻기를 바랍니다. 왜 당신은 왜 활성화 기능이 필요한가?
+16:11
+the point what's the importance of an activation function why can't we just directly pass our linear combination of
+요점 활성화 기능의 중요성은 무엇입니까?
+16:17
+their inputs with our weights through to the output well the point of an activation function
+출력에 대한 우리의 가중치에 대한 그들의 입력 활성화 기능의 지점
+16:22
+is to introduce a non-linearity into our system now imagine i told you to separate the green points from the red
+우리 시스템에 비선형 성을 도입하는 것입니다.
+16:28
+points and that's the thing that you want to train and you only have access to one line it's an it's not non-linear
+포인트와 그게 당신이 훈련하고 싶은 것이며 한 줄만 액세스 할 수 있습니다. 그것은 비선형이 아닙니다.
+16:35
+so you only have access to a line how can you do this well it's an extremely hard problem then right and in fact if
+그래서 당신은 라인에 액세스 할 수 있습니다. 어떻게이 일을 잘 할 수 있습니까?
+16:41
+you can only use a linear activation function in your network no matter how many neurons you have or how deep is the
+뉴런이 얼마나 많은지 또는 깊이에 관계없이 네트워크에서 선형 활성화 기능 만 사용할 수 있습니다.
+16:47
+network you will only be able to produce a result that is one line because when you add a line to a line you still get a
+네트워크는 한 줄에 한 줄만 발생하는 결과 만 생성 할 수 있습니다. 라인에 라인을 추가 할 때 여전히
+16:53
+line output non-linearities allow us to approximate arbitrarily complex functions and that's
+라인 출력 비선형성은 우리가 임의로 복잡한 기능을 근사화 할 수있게 해줍니다.
+17:00
+what makes neural networks extremely powerful let's understand this with a simple example so imagine i give you a
+신경망을 매우 강력하게 만드는 것은 간단한 예로 이것을 이해해야합니다.
+17:07
+trained network now here i'm giving you the weights and the weights w are on the top right
+훈련 된 네트워크 지금 여기에 나는 당신에게 가중치를주고 무게 W가 오른쪽 상단에 있습니다.
+17:13
+so w0 is going to be set to 1 that's our bias and the w vector
+그래서 W0은 1로 설정 될 것입니다.
+17:19
+the weights of our input dimension is going to be a vector with
+입력 치수의 가중치는 다음과 같은 벡터가 될 것입니다.
+17:24
+the values 3 and negative 2. this network only has two inputs right x1 and x2 and if we want to get the
+값 3과 음수 2.이 네트워크는 오른쪽 x1과 x2의 두 개의 입력 만 가지고 있으며 우리가 얻으려면
+17:31
+output of it we simply do the same step as before and i want to keep drilling in this message to get the output all we
+그것의 출력 우리는 단순히 이전과 동일한 단계를 수행 하고이 메시지에서 계속 드릴링하여 출력을 모두 얻고 싶습니다.
+17:36
+have to do is take our inputs multiply them by our corresponding weights w add
+해야 할 일은 우리의 입력을 우리의 입력을 곱하는 것입니다.
+17:42
+the bias and apply a non-linearity it's that simple but let's take a look at what's actually inside that
+편견과 비선형 성을 적용하는 것은 간단하지만 실제로 내부에 무엇이 있는지 살펴 보겠습니다.
+17:48
+non-linearity when i do that multiplication and addition what comes out it's simply a weighted combination
+내가 곱셈과 추가 할 때 비선형 성은 단순히 가중 조합입니다.
+17:54
+of the inputs in the form of a 2d line right so we take our inputs x of t x
+2D 라인의 형태의 입력 중 오른쪽에있는 입력 x의 입력 x를 가져옵니다.
+18:00
+transpose excuse me multiply it as a dot product with our weights add a bias and if we look at what's inside this
+변신 실례를 전하면 웨이트가있는 도트 제품으로 곱하십시오. 바이어스를 추가하고 우리 가이 내부에 무엇이 있는지 보면
+18:07
+parentheses here what is getting passed to g this is simply a two dimensional line because all right we have two
+여기에 괄호 안에 전달되는 것 g로 전달되는 것은 단순히 2 차원 라인입니다.
+18:13
+inputs x1 and x2 so we can actually plot this line in feature space or input space we'll call it because this is
+X1 및 X2를 입력하여 실제로이 라인을 기능 공간 또는 입력 공간에서 플로팅 할 수 있습니다.
+18:20
+along the x-axis is x1 and along the y-axis is x2
+x 축을 따라 x1이고 y 축을 따라 x2가 있습니다.
+18:25
+and we can plot the the decision boundary we call it of the input to this um class to this activation function
+그리고 우리는이 활성화 기능에 대한이 UM 클래스에 대한 입력의 결정 경계를 그릴 수 있습니다.
+18:32
+this is actually the line that defines our perceptron neuron
+이것은 실제로 우리의 퍼셉트론 뉴런을 정의하는 선입니다.
+18:38
+now if i give you a new data point let's say x equals negative 1 2 we can plot
+이제 새로운 데이터 포인트를 주면 X가 부정적인 1 2라고 가정 해 봅시다.
+18:44
+this data point in this space in this two-dimensional space and we can also see where it falls with respect to that
+이 공간 의이 데이터 포인트는이 2 차원 공간에서 우리는 또한 그것이 어디에 있는지 확인할 수 있습니다.
+18:51
+line now if i want to compute its weighted combination i simply follow the
+가중치 조합을 계산하려면 지금 라인을
+18:57
+perceptron equation to get 1 minus 3 minus 4 which equals minus 6.
+Perceptron 방정식은 1 마이너스 4와 같은 1 마이너스 3 마이너스 4를 얻습니다.
+19:03
+and when i put that into a sigmoid activation function we get a final output of approximately 0.002
+그리고 그것을 Sigmoid 활성화 함수에 넣을 때 우리는 약 0.002의 최종 출력을 얻습니다.
+19:09
+now why is that the case so assume we have this input negative 1 negative 2 and
+이제 왜 그 경우에 우리 가이 입력 음수 1 음수 2를 가지고 있다고 가정합니다.
+19:14
+this is just going through the math again negative 1 and 2. we pass that through our our equations and we get
+이것은 단지 수학을 다시 통과하고 있습니다.
+19:20
+this output from g let's dive in a little bit more to this feature graph well remember if i if the sigmoid
+G 의이 출력은이 기능 그래프에 조금 더 다이빙하자
+19:26
+function is defined in the standard way it's actually outputting values between 0 and
+함수는 표준 방식으로 정의되어 실제로 0과 사이의 값을 출력합니다.
+19:32
+1 and the middle is actually at 0.5 right so anything on the left hand side of this feature space of this line is
+1 그리고 중간은 실제로 0.5에 있으므로이 라인 의이 기능 공간의 왼쪽에있는 것은
+19:39
+going to correspond to the input being less than 0 and the output being greater
+입력이 0보다 작고 출력이 더 큽니다.
+19:44
+than 0.5 or excuse me less than 0.5 and on the other side is the opposite that's corresponding to our activation z
+0.5 이하 또는 0.5 미만의 실례를 받고 다른쪽에는 활성화 Z에 해당하는 반대입니다.
+19:52
+being greater than 0 and our output y being greater than 0.5 right so this is
+0보다 크고 출력이 0.5보다 크기 때문에
+19:57
+just following all of the sigmoid math but illustrating it in pictorial form and schematics and in practice neural
+모든 sigmoid 수학을 따르지만 그림 형태와 회로도 및 실제로 신경으로 설명합니다.
+20:03
+networks don't have just two weights w1 w2 they're composed of millions and millions of weights in practice
+네트워크는 두 가지 가중치가 없습니다 W1 W2 실제로 수백만과 수백만의 가중치로 구성되어 있습니다.
+20:10
+so you can't really draw these types of plots for the types of neural networks that you'll be creating but this is to
+따라서 만들게 할 신경망의 유형에 대해 이러한 유형의 플롯을 실제로 그릴 수는 없지만 이는 다음과 같습니다.
+20:16
+give you an example of a single neuron with a very small number of weights and
+매우 적은 수의 무게를 가진 단일 뉴런의 예를 제공합니다.
+20:21
+we can actually visualize these type of things to gain some more intuition about what's going on under the hood
+우리는 실제로 이러한 유형의 것들을 시각화하여 후드 아래에서 무슨 일이 일어나고 있는지에 대한 더 많은 직관을 얻을 수 있습니다.
+20:27
+so now that we have an idea about the perceptron let's start by building neural networks from this foundational
+이제 우리는 퍼셉트론에 대한 아이디어를 얻었 으므로이 기초에서 신경망을 구축하는 것으로 시작하겠습니다.
+20:34
+building block and seeing how all of this story starts to come together so let's revisit our previous diagram of
+빌딩 블록 과이 모든 이야기가 어떻게 결합되기 시작하는지 확인하자.
+20:41
+the perceptron if there's a few things i want you to take away from this class in this lecture today i want it to be this thing
+오늘이 강의 에서이 수업에서 벗어나기를 원하는 몇 가지가 있다면 나는이 일이되기를 원합니다.
+20:48
+here so i want you to remember how a perceptron works and i want to remember three steps the
+여기서 나는 당신이 퍼셉트론의 작동 방식을 기억하기를 원하며 세 단계를 기억하고 싶습니다.
+20:54
+first step is dot product your inputs with your weights dot product add a bias and apply a non-linearity and that
+첫 번째 단계는 Dot Products weights dot product를 사용한 입력입니다. 바이어스를 추가하고 비선형 성을 적용합니다.
+21:00
+defines your entire perceptron forward propagation all the way down into these three operations
+이 세 가지 작업으로 전체 지각 전파 전파를 정의합니다.
+21:06
+now let's simplify the diagram a little bit now that we got the foundations down i'll remove all of the weight labels so
+이제 다이어그램을 조금 단순화합시다.
+21:13
+now it's assumed that every line every arrow has a corresponding weight associated to it
+이제 모든 화살표가 모든 라인에 해당 무게를 가지고 있다고 가정합니다.
+21:18
+now i'll remove the bias term for simplicity as well here you can see right here
+이제 단순성을 위해 바이어스 용어를 제거하겠습니다. 여기에서 바로 여기에서 볼 수 있습니다.
+21:25
+and note that z the result of our dot product plus our bias
+그리고 z 우리의 도트 제품의 결과와 바이어스의 결과
+21:31
+is before we apply the non-linearity right so g of z is our output our prediction of the
+비선형 성을 적용하기 전에 z의 g는 우리의 출력입니다.
+21:37
+perceptron our final output is simply our activation function g
+PERCEPTRON 최종 출력은 단순히 활성화 함수 g입니다.
+21:43
+taking as input that state z if we want to define a
+우리가 정의하고 싶다면 그 상태 z 입력으로 복용
+21:49
+multi-output neural network so now we don't have one output y let's say we have two outputs y one and y two we
+멀티-출력 신경망이 있으므로 이제 하나의 출력이 없습니다.
+21:55
+simply add another perceptron to this diagram now we have two outputs each one
+이 다이어그램에 다른 Perceptron을 추가하기 만하면 이제 각각 두 개의 출력이 있습니다.
+22:00
+is a normal perceptron just like we saw before each one is taking inputs from
+각각이 입력을하기 전에 본 것처럼 정상적인 퍼셉트론입니다.
+22:06
+x1 to xm from the x's multiplying them by the weights and they have two different sets of weights because
+X1에서 Xm에서 X가 무게를 곱하고 두 개의 다른 가중치 세트를 가지고 있습니다.
+22:11
+they're two different neurons right they're two different perceptrons they're going to add their own biases
+그것들은 두 가지 다른 뉴런이 맞습니다.
+22:16
+and then they're going to apply the activation function so you'll get two different outputs because the weights are different for
+그런 다음 활성화 기능을 적용하므로 가중치가 다르기 때문에 두 가지 다른 출력을 얻을 수 있습니다.
+22:23
+each of these neurons if we want to define let's say this entire
+우리가 정의하려면이 뉴런 각각 이이 전체를 가정 해 봅시다
+22:31
+system from scratch now using tensorflow we can do this very very simply just by following the
+지금부터 처음부터 Tensorflow를 사용하는 시스템은
+22:37
+operations that i outlined in the previous slide so our neuron let's start by a single dense
+이전 슬라이드에서 설명한 작업이므로 뉴런은 단일 밀도로 시작하겠습니다.
+22:44
+layer a dense layer just corresponds to a layer of these neurons so not just one neuron or two neurons but an arbitrary
+깔개 층은 단지 이들 뉴런의 층에 해당하므로 하나의 뉴런 또는 두 개의 뉴런이 아니라 임의의
+22:51
+number let's say n neurons in our dense layer we're going to have two sets of variables one is the weight
+숫자 짙은 층의 n 뉴런이라고 가정 해 봅시다. 우리는 두 세트의 변수를 가질 것입니다.
+22:57
+vector and one is the bias so we can define both of these types of variables and weights as part of our layer
+벡터와 하나는 바이어스이므로 레이어의 일부로 이러한 유형의 변수와 가중치를 모두 정의 할 수 있습니다.
+23:04
+the next step is to find what is the forward pass right and remember we talked about the operations
+다음 단계는 포워드 패스 오른쪽을 찾는 것입니다.
+23:10
+that defined this forward pass of a perceptron and of a dense layer now it's composed of the steps that we
+그것은 퍼셉트론과 조밀 한 층 의이 포워드 패스를 정의했습니다. 이제 우리는 우리의 단계로 구성됩니다.
+23:16
+talked about first we compute matrix multiplication of our inputs with our weight matrix our weight vector so
+먼저 우리는 가중치 매트릭스로 입력의 매트릭스 곱셈을 계산하여 무게 벡터를 계산합니다.
+23:23
+inputs multiplied by w add the bias plus b
+입력에 곱한 입력은 바이어스 + b를 추가합니다. b
+23:28
+and feed it through our activation function here i'm choosing a sigmoid activation function and then we return
+그리고 우리의 활성화 기능을 통해 그것을 공급합니다. 여기에서 sigmoid 활성화 기능을 선택하고 우리는 돌아옵니다.
+23:34
+the output and that defines a dense layer of a neural network now we have this dense layer we can implement
+출력과 이는 신경망의 조밀 한 층을 정의합니다. 이제 우리는 우리가 구현할 수있는이 조밀 한 계층을 가지고 있습니다.
+23:41
+it from scratch like we see in the previous slide but we're pretty lucky because tensorflow has already implemented this dense layer
+이전 슬라이드에서 볼 수 있듯이 처음부터는 텐서 플로우가 이미이 밀도가 높은 레이어를 구현했기 때문에 운이 좋았습니다.
+23:47
+for us so we don't have to do that and write that additional code instead let's just call it here we can see an example
+우리를 위해 우리를 위해 우리는 그렇게 할 필요가없고 추가 코드를 대신 대신 여기로 부를 수 있습니다.
+23:53
+of calling a dense layer with the number of output units set equal to 2.
+출력 장치 수가 2와 동일 한 밀도가 높은 레이어를 호출하는 것.
+23:58
+now let's dive a little bit deeper and see how we can make now a full single layered neural network not just a
+이제 조금 더 깊이 다이빙을하고 이제 우리가 어떻게 단일 층이있는 신경망을 만들 수 있는지 보자.
+24:05
+single layer but also an output layer as well this is called a single hidden
+단일 레이어뿐만 아니라 출력 레이어도 이것을 단일 숨겨집니다.
+24:10
+layered neural network and we call this a hidden layer because these states in the middle with these red states are not
+계층화 된 신경망과 우리는 이것을 숨겨진 층이라고 부릅니다.
+24:17
+directly observable or enforceable like the inputs which we feed into the model and the outputs which we know what we
+우리가 모델에 공급하는 입력과 우리가 무엇을 아는 출력과 같이 직접 관찰 가능하거나 시행 할 수 있습니다.
+24:23
+want to predict right so since we now have this transformation from the inputs to the hidden layer and
+우리는 이제 입력에서 숨겨진 층으로의 변환을 가지고 있기 때문에 올바른 예측을 원합니다.
+24:30
+from the hidden layer to the output layer we need now two sets of weight matrices w1 for the input layer and w2
+숨겨진 층에서 출력 레이어까지 이제 입력 레이어 및 W2에 대해 두 세트의 가중치 행렬 W1이 필요합니다.
+24:38
+for the output layer now if we look at a single unit in this
+우리가 이것에서 단일 장치를 보면 출력 레이어의 경우
+24:44
+hidden layer let's take this second unit for example z2 it's just the same perceptron that we've been seeing over
+숨겨진 레이어 예를 들어 Z2와 같은이 두 번째 유닛을 가져 가자.
+24:50
+and over in this lecture already so we saw before that it's obtaining its output by taking a dot product with
+그리고이 강의에서 이미 도트 제품을 가져 와서 출력을 얻는 것을 보았습니다.
+24:56
+those x's its inputs multiplying multiplying them via the dot product
+그 X의 입력은 Dot 제품을 통해 곱하는 데 곱하는 입력입니다.
+25:01
+adding a bias and then passing that through through the form of z2
+편견을 추가 한 다음 Z2의 형태를 통해 통과
+25:07
+if we took a different hidden node like z3 for example it would have a different output value just because the weights
+예를 들어 Z3와 같은 다른 숨겨진 노드를 사용하면 가중치가 있기 때문에 출력 값이 다릅니다.
+25:13
+leading to z3 are probably going to be different than the weights leading to z2 and we we basically start them to be
+Z3로 이어지는 것은 아마도 Z2로 이어지는 가중치와 다를 것입니다. 우리는 기본적으로 그들을 시작합니다.
+25:18
+different so we have diversity in the neurons now this picture looks a little bit messy so let me clean it up a little bit
+우리는 뉴런의 다양성을 가지고 있습니다. 이제이 그림은 조금 지저분 해 보이므로 조금 청소하겠습니다.
+25:24
+more and from now on i'll just use this symbol in the middle to denote what we're calling a dense layer dense is
+더 많은 것과 지금부터 나는 우리가 밀도가 높은 빽빽한 것을 나타 내기 위해 중간 에이 기호를 사용합니다.
+25:30
+called dense because every input is connected to every output like in a fully connected way so
+모든 입력이 완전히 연결된 방식으로 모든 출력에 연결되어 있기 때문에 밀도가 부릅니다.
+25:36
+sometimes you also call this a fully connected layer to define this fully connected network
+때로는이 완전히 연결된 네트워크를 정의하기 위해 완전히 연결된 레이어라고도합니다.
+25:43
+or dense network in tensorflow you can simply stack your dense layers one after
+또는 밀집된 네트워크의 Tensorflow에서 조밀 한 레이어를 한 번에 쌓을 수 있습니다.
+25:48
+another in what's called a sequential model a sequential model is something that feeds your inputs sequentially from
+순차적 모델이라고 불리는 또 다른 순차적 모델은 입력을 순차적으로 공급하는 것입니다.
+25:54
+inputs to outputs so here we have two layers the heightened layer first defined with n hidden units and our
+출력에 대한 입력이므로 여기에는 두 개의 레이어가 있습니다.
+26:01
+output layer with two output units and if we want to create a deep neural network it's the same thing we just keep
+출력 장치가 두 개있는 출력 레이어와 깊은 신경망을 만들고 싶다면 우리가 유지하는 것과 동일합니다.
+26:07
+stacking these hidden layers on top of each other in a sequential model and we can create more and more hierarchical
+순차적 모델 로이 숨겨진 레이어를 서로 위에 쌓고 점점 더 계층 적으로 생성 할 수 있습니다.
+26:15
+networks and this network for example is one where the final output in purple is
+예를 들어 네트워크 와이 네트워크는 Purple의 최종 출력이있는 곳입니다.
+26:20
+actually computed by going deeper and deeper into the layers of this network
+실제로이 네트워크의 계층으로 더 깊고 깊게 들어가서 계산됩니다.
+26:26
+and if we want to create a deep neural network in software all we need to do is stack those software blocks over and
+소프트웨어에서 깊은 신경망을 만들고 싶다면 소프트웨어 블록을 쌓고
+26:32
+over and create more hierarchical models okay so this is awesome now we have an
+더 많은 계층 적 모델을 만들었습니다.
+26:38
+idea and we've seen an example of how we can take a very simple and intuitive
+아이디어와 우리는 우리가 매우 간단하고 직관적 인 방법의 예를 보았습니다.
+26:46
+mechanism of a single neuron a single perceptron and build that and build that
+단일 뉴런의 메커니즘 단일 퍼셉트론의 메커니즘을 만들고 그것을 만들고
+26:51
+all into the form of layers and complete complex neural networks let's take a look at how we can apply
+모두 층의 형태와 완전한 복잡한 신경망으로 우리가 어떻게 적용 할 수 있는지 살펴 보겠습니다.
+26:56
+them in a very real and practical problem that maybe some of you have thought about before coming today's to
+그들 중 일부는 오늘날에 오기 전에 생각했던 매우 현실적이고 실용적인 문제로
+27:03
+today's class now here's the problem that i want to train an ai to to solve if i was a student in this class
+오늘의 수업 지금 여기에 내가이 수업에서 학생이었을 때 해결하기 위해 AI를 훈련시키고 싶은 문제가 있습니다.
+27:09
+so will i pass this class that's the problem that we're going to ask our machine or a deep learning algorithm to answer for us and to do that let's start
+그래서 우리가 기계 나 딥 러닝 알고리즘에 우리를 위해 대답하도록 요청하고 시작하기 위해이 수업을 통과 할 것입니다.
+27:16
+by defining some inputs and outputs or sorry input features excuse me to the to
+일부 입력 및 출력 또는 미안 입력 기능을 정의함으로써 실례합니다.
+27:23
+the ai to the ai model one feature that's let's use to learn from is the number of
+AI에서 AI 모델에 대한 AI에서 배우기 위해 사용하는 기능 중 하나는
+27:29
+lectures that you attend as part of today as part of this course and the second feature is the number of hours
+이 과정의 일부로 오늘의 일부로 참석 한 강의는 시간 수입니다.
+27:35
+that you're going to spend developing your final project and we can collect a bunch of data because this is our fifth year teaching this amazing class we can
+최종 프로젝트를 개발하는 데 소비하고 우리는이 놀라운 수업을 가르치는 다섯 번째 해이기 때문에 많은 데이터를 수집 할 수 있습니다.
+27:41
+collect a bunch of data from past years on how previous students performed here so each dot corresponds to a student who
+지난 몇 년간 이전 학생들이 여기에서 수행 한 방법에 대한 많은 데이터를 수집하여 각 점이 학생에게 해당합니다.
+27:49
+took this class we can plot each student in this two-dimensional feature space where on the x-axis is the number of
+이 수업을 들었습니다. 우리는 X 축의 수인이 2 차원 기능 공간에서 각 학생을 플로팅 할 수 있습니다.
+27:56
+lectures they attended and on the y-axis is the number of hours that they spent on the final project the green points
+그들이 참석 한 강의와 Y 축에 대한 강의는 최종 프로젝트 The Green Points에 소요 된 시간 수입니다.
+28:01
+are the students who pass and the red points are those who failed and then there's you you lie right here
+지나가는 학생들과 레드 포인트는 실패한 사람들이고 당신이 바로 여기에 누워 있습니다.
+28:07
+right here at the point four five so you've attended four lectures and you've spent five hours on your final project
+4 개의 포인트에서 바로 여기에 4 개의 강의에 참석했고 최종 프로젝트에서 5 시간을 보냈습니다.
+28:13
+you want to build now a neural network to determine given everyone else's standing in the class
+당신은 이제 다른 사람들이 수업에 참가하는 것을 결정하기 위해 신경망을 구축하고 싶습니다.
+28:19
+will i pass or fail this class now let's do it so we have these two inputs one is four one
+이 수업을 통과하거나 실패할까요? 이제이 두 입력이 4 개입니다.
+28:25
+is five this is your inputs and we're going to feed these into a single layered neural network with three hidden
+5입니다 이것은 당신의 입력이며 우리는 이것들을 3 개의 숨겨진 단일 계층 신경망에 공급할 것입니다.
+28:31
+units and we'll see that when we feed it through we get a predicted value of probability of you passing this class as
+단위와 우리는 그것을 통해 먹이를 주면이 클래스를
+28:36
+0.1 or 10 percent so that's pretty bad because well you're not going to fail the class
+0.1 또는 10 % 그래서 당신은 수업에 실패하지 않을 것이기 때문에 꽤 나쁘다.
+28:42
+you're actually going to succeed so the actual value here is going to be one you do pass the class so why did the network
+당신은 실제로 성공할 것이므로 여기의 실제 가치는 당신이 클래스를 통과하는 사람이 될 것입니다.
+28:49
+get this answer incorrectly well to start with the network was never
+네트워크로 시작하기 위해이 답변을 잘못 이해하지 못했습니다.
+28:54
+trained right so all it did was we just started the network it has no idea what success 191 is how it
+우리가 방금 네트워크를 시작한 것만으로도 훈련을 받았습니다.
+29:02
+occurs for a student to pass or fail a class or what these inputs four and five mean right so it has no idea it's never
+학생이 수업을 통과하거나 실패 하거나이 입력이 4와 5를 의미하는 것이 옳은 일이 아니므로 결코 결코 알 수 없습니다.
+29:08
+been trained it's basically like a baby that's never seen anything before and you're feeding some random data to it
+훈련을받은 것은 기본적으로 전에 본 적이없는 아기와 같으며 임의의 데이터를 먹이고 있습니다.
+29:13
+and we have no reason to expect why it's going to get this answer correctly that's because we never told it how to
+그리고 우리는 왜이 답을 올바르게 얻을 이유를 기대할 이유가 없습니다.
+29:20
+train itself how to update itself so that it can learn how to predict such a
+그러한
+29:27
+such an outcome or to predict such a task of passing or failing a class now to do this we have to actually
+그러한 결과 또는 지금 수업을 통과하거나 실패하는 그러한 과제를 예측하기 위해서는 실제로 우리가해야합니다.
+29:33
+define to the network what it means to get a wrong prediction or what it means
+네트워크에 잘못된 예측을 얻는 것이 무엇을 의미하는지 또는 그것이 의미하는 바를 정의하십시오.
+29:38
+to incur some error now the closer our prediction is to our actual value the lower this error or our loss function
+이제 약간의 오류가 발생하기 위해 우리의 예측이 가까워지면 실제 가치 가이 오류 또는 손실 함수가 낮아집니다.
+29:45
+will be and the farther apart they are the uh the farther the part they are the
+그리고 더 멀리 떨어져있을수록 그들은 그 부분이 더 멀리있을 수 있습니다.
+29:50
+more error we will incur the closer they are together the less error that we will occur
+더 많은 오류가 더 가까워 질수록 오류가 줄어들 수 있습니다.
+29:56
+now let's assume we have data not just from one student but for many students now we care about how the model did on
+이제 우리는 한 학생뿐만 아니라 많은 학생들에게 모델이 어떻게 진행되었는지에 대해 관심을 가지고 있다고 가정 해 봅시다.
+30:02
+average across all of the students in our data set and this is called the empirical
+데이터 세트의 모든 학생들의 평균과이를 경험적이라고합니다.
+30:08
+loss function it's just simply the mean of all of the individual loss functions from our data set
+손실 함수 단순히 데이터 세트의 모든 개별 손실 기능의 평균 일뿐입니다.
+30:13
+and when training a network to to solve this problem we want to
+그리고이 문제를 해결하기 위해 네트워크를 훈련시킬 때
+30:18
+minimize the empirical law so we want to minimize the loss that the network incurs on the data set that it has
+경험적 법칙을 최소화하여 네트워크가 데이터 세트에서 발생하는 손실을 최소화하려고합니다.
+30:24
+access to between our predictions and our outputs so if we look at the problem of binary
+우리의 예측과 출력 사이에 액세스하므로 이진의 문제를 보면
+30:30
+classification for example passing or failing a class we can use something a loss function called for example the
+분류 클래스를 통과하거나 실패하는 등 분류 우리는 예를 들어 호출 된 손실 함수를 사용할 수 있습니다.
+30:37
+softmax cross-entropy loss and we'll go into more detail and you'll get some experience implementing this loss
+SoftMax Cross-Entropy 손실과 우리는 더 자세하게 진행하면이 손실을 구현 한 경험이 있습니다.
+30:43
+function as part of your software labs but i'll just give it as a a quick aside right now as part of this slide
+소프트웨어 실험실의 일부로 기능하지만이 슬라이드의 일부로 지금 당장 빠르게 제쳐두고 있습니다.
+30:50
+now let's suppose instead of predicting pass or fail a binary classification output let's suppose i want to predict a
+이제 패스를 예측하거나 이진 분류 출력을 실패하는 대신 A를 예측하고 싶다고 가정 해 봅시다.
+30:56
+numeric output for example the grade that i'm going to get in this class now that's going to be any real number
+예를 들어이 수업에 참여할 등급과 같은 숫자 출력은 이제 실수가 될 것입니다.
+31:02
+now we might want to use a different loss function because we're not doing a classification problem anymore now we might want to use something like a mean
+이제 우리는 더 이상 분류 문제를 수행하지 않기 때문에 다른 손실 함수를 사용하고 싶을 수도 있습니다. 이제 우리는 평균과 같은 것을 사용하고 싶을 것입니다.
+31:09
+squared error loss function or maybe something else that takes as input
+제곱 오류 손실 함수 또는 입력으로 취하는 다른 것
+31:15
+continuous real valued numbers okay so now that we have this loss
+지속적인 실제 가치 숫자는 괜찮으므로 이제 우리는이 손실이 있습니다.
+31:21
+function we're able to tell our network when it makes a mistake now we've got to put that together with
+기능은 이제 실수를 할 때 네트워크를 알릴 수 있습니다.
+31:26
+the actual model that we defined in the last part to actually see now how we can train our model to update and optimize
+우리가 마지막 부분에서 정의한 실제 모델은 실제로 모델을 업데이트하고 최적화하도록 훈련 할 수있는 방법을 실제로 볼 수 있습니다.
+31:34
+itself given that error function so how can it minimize the error given a data set
+그 오류 기능이 주어지면 데이터 세트가 주어진 오류를 최소화 할 수있는 방법
+31:40
+so remember that we want the objective here
+따라서 우리는 여기서 목표를 원한다는 것을 기억하십시오
+31:46
+is that we want to identify a set of weights let's call them w star that will give us the minimum
+우리는 무게 세트를 식별하고 싶다는 것입니다.
+31:54
+loss function on average throughout this entire data sets that's the gold standard of what we want to accomplish
+이 전체 데이터 세트에서 평균적으로 손실 함수는 우리가 달성하고자하는 금 표준입니다.
+32:00
+here in training a neural network right so the whole goal of this class really is how can we identify w star right so
+여기에 신경망을 제대로 훈련시킬 때이 클래스의 전체 목표는 실제로 W 스타를 식별 할 수있는 방법입니다.
+32:07
+how can we train our the weights all of the weights in our network such that the loss that we
+네트워크의 모든 가중치를 우리의 손실을 어떻게 훈련시킬 수 있습니까?
+32:13
+get as an output is as small as it can possibly be right so that means that we want to find
+출력이 옳을 수있는만큼 작아서 우리가 찾고 싶은 것을 의미합니다.
+32:18
+the w's that minimize j of w so that's our empirical loss our average empirical loss
+w는 w의 j를 최소화하는 w입니다. 그래서 우리의 경험적 상실 우리의 평균 경험적 손실입니다.
+32:24
+remember that w is just a group of all of the ws from our from every layer in
+W는 모든 레이어에서 우리의 모든 WS 그룹 일뿐입니다.
+32:29
+the model right so we just concatenate them all together and we want to minimize the we want to find the weights that give us the lowest loss
+우리는 그것들을 모두 함께 연결하고 우리는 우리에게 가장 낮은 손실을주는 가중치를 찾고자하는 것을 최소화하고 싶습니다.
+32:36
+and remember that our loss function is just a is a function right that takes us input all of our weights
+그리고 우리의 손실 기능은 단지 A라는 것을 기억하십시오.
+32:42
+so given some set of weights our loss function will output a single value right that's the error
+따라서 일부 가중치 세트가 주어지면 손실 함수는 단일 값을 출력하여 오류입니다.
+32:47
+if we only have two weights for example we might have a loss function that looks like this we can actually plot the loss function because it's it's relatively
+예를 들어 두 가지 가중치 만있는 경우 이와 같이 보이는 손실 함수가있을 수 있습니다. 실제로 손실 기능을 플로팅 할 수 있습니다.
+32:54
+low dimensional we can visualize it right so on the x on the horizontal axis x and y axis we're having the two
+저 차원 우리는 수평 축 X와 Y 축의 X에서 시각화 할 수 있습니다.
+33:01
+weights w0 and w1 and on the vertical axis we're having the loss so higher
+Weights W0 및 W1 및 수직 축에서 손실이 너무 높아집니다.
+33:07
+loss is worse and we want to find the weights w0 and w1 that will bring us the lowest
+손실이 더 나빠서 우리는 우리에게 가장 낮은 곳을 가져다 줄 무게 W0과 W1을 찾고 싶습니다.
+33:13
+part to the lowest part of this lost landscape so how do we do that this a process
+이 잃어버린 풍경의 가장 낮은 부분에 참여하므로 어떻게이 과정을 수행합니까?
+33:20
+called optimization and we're going to start by picking an initial w0 and w1
+최적화라고 불리며 초기 W0 및 W1을 선택하여 시작할 것입니다.
+33:25
+start anywhere you want on this graph and we're going to compute the gradient remember our loss function is simply a
+이 그래프에서 원하는 곳 어디서나 시작하고 우리는 그라디언트를 계산할 것입니다. 우리의 손실 함수는 단순히
+33:32
+mathematical function so we can compute the derivatives and compute the gradients of this function and the gradient tells us the direction that we
+수학적 함수는 파생 상품을 계산 하고이 함수의 기울기를 계산할 수 있으며 그라디언트는 우리에게 방향을 알려줍니다.
+33:39
+need to go to maximize j of w to maximize our loss
+손실을 극대화하기 위해 w의 J를 최대화하려면 가야합니다.
+33:44
+so let's take a small step now in the opposite direction right because we want to find the lowest loss for a given set
+그러니 주어진 세트의 가장 낮은 손실을 찾고 싶기 때문에 지금 반대 방향으로 작은 발걸음을 내딛자
+33:51
+of weights so we're going to step in the opposite direction of our gradient and we're going to keep
+우리가 그라디언트의 반대 방향으로 나아가고 우리는 유지할 것입니다.
+33:56
+repeating this process we're going to compute gradients again at the new point and keep stepping and stepping and stepping until we converge to a local
+이 과정을 반복하면서 우리는 새로운 지점에서 그라디언트를 다시 계산하고 우리가 로컬로 수렴 할 때까지 계속 스텝핑하고 스텝핑하고 스텝핑 할 것입니다.
+34:02
+minima eventually the gradients will converge and we'll stop at the bottom it may not be the global bottom but we'll
+Minima 결국 그라디언트가 수렴하고 바닥에서 멈출 것입니다. 전역 바닥이 아닐 수도 있지만 우리는 우리는
+34:08
+find some bottom of our lost landscape so we can summarize this whole algorithm
+이 전체 알고리즘을 요약 할 수 있도록 잃어버린 풍경의 바닥을 찾으십시오.
+34:15
+known as gradient descent using the gradients to descend into our loss function in pseudocode so here's the
+슈도 코드에서 우리의 손실 함수로 내려 가기 위해 그라디언트를 사용하여 그라디언트 하강으로 알려져 있으므로 여기에 있습니다.
+34:22
+algorithm written out as pseudocode we're going to start by initializing weights randomly and we're going to repeat the two steps until we convert so
+의사로드로 작성된 알고리즘은 무작위로 가중치를 초기화하여 시작할 것입니다.
+34:29
+first we're going to compute our gradients and then we're going to step in the opposite direction a small step
+먼저 우리는 그라디언트를 계산하고 반대 방향으로 작은 단계를 밟을 것입니다.
+34:34
+in the opposite direction of our gradients to update our weights right
+무게를 올바르게 업데이트하기 위해 그라디언트의 반대 방향으로
+34:40
+now the amount that we step here eta this is the the n character next to our
+이제 우리가 여기에 eTA를 밟는 금액 이것은 우리 옆의 N 캐릭터입니다.
+34:45
+gradients determines the the magnitude of the step that we take in the direction of our gradients and we're
+그라디언트는 우리가 그라디언트의 방향으로 취하는 단계의 크기를 결정하며 우리는
+34:50
+going to talk about that later that's a very important part of this problem but before i do that i just want to show you
+나중에 그것에 대해 이야기하려고하는 것은이 문제의 매우 중요한 부분이지만 내가하기 전에 나는 당신에게 보여주고 싶습니다.
+34:56
+also kind of the analog side of this algorithm written out in tensorflow again which may be helpful for your
+또한이 알고리즘의 아날로그 측면은 다시 Tensorflow로 작성되었습니다.
+35:01
+software labs right so this whole algorithm can be replicated using automatic differentiation using
+이 전체 알고리즘을 사용하여 자동 차별화를 사용하여 복제 할 수 있도록 소프트웨어 랩이 올바르게
+35:09
+platforms like tensorflow so tensorflow with tensorflow you can actually randomly initialize your weights and you
+Tensorflow와 같은 플랫폼 인 Tensorflow와 같은 플랫폼은 실제로 무작위로 무작위로 무작위를 초기화 할 수 있습니다.
+35:15
+can actually compute the gradients and do these differentiations automatically so it will actually take care of the
+실제로 그라디언트를 계산하고 이러한 차별화를 자동으로 수행하므로 실제로 처리 할 수 있습니다.
+35:21
+definitions of all of these gradients using automatic differentiation and it will return the gradients that you can
+자동 차별화를 사용하여 이러한 모든 그라디언트의 정의는 가능한 그라디언트를 반환합니다.
+35:26
+directly use to step with and optimize and train your weights
+무게를 밟고 최적화하고 훈련하는 데 직접 사용하십시오.
+35:31
+but now let's take a look at this term here the gradient so i mentioned to you that tensorflow and your software
+하지만 이제이 용어를 여기에서 그라디언트를 살펴 보겠습니다.
+35:37
+packages will compute this for you but how does it actually do that i think it's important for you to understand how the gradient is computed for every
+패키지는 이것을 위해 이것을 계산하지만 실제로 어떻게해야합니까?
+35:44
+single weight in your neural network so this is actually a process called back propagation in deep learning and
+신경망의 단일 무게는 실제로 딥 러닝에서 후면 전파라고 불리는 프로세스입니다.
+35:51
+neural networks and we'll start with a very simple network and this is probably the simplest network in existence
+신경망과 우리는 매우 간단한 네트워크로 시작하며 이것은 아마도 존재하는 가장 간단한 네트워크 일 것입니다.
+35:56
+because it only contains one hidden neuron right so it's the smallest possible neural network
+숨겨진 뉴런이 하나만 포함되어 있기 때문에 가장 작은 신경 네트워크이기 때문입니다.
+36:03
+now the goal here is that we're going to try and do back propagation manually ourselves by hand so we're going to try
+이제 여기서 목표는 우리가 수동으로 수동으로 전파를 시도하고 다시 시도 할 것이므로 우리는 노력할 것입니다.
+36:08
+and compute the gradient of our loss j of w with respect to our weight w2 for
+그리고 체중 W2에 대한 w의 손실 j의 구배를 계산합니다.
+36:15
+example this tells us how much a small change in w2 will affect our loss function right so if i change and
+예는 W2의 작은 변화가 손실 기능에 얼마나 영향을 미치는지 알려줍니다.
+36:22
+perturb w2 a little bit how does my error change as a result so
+w2 w2는 약간의 오류가 어떻게 변합니까?
+36:28
+if we write this out as a derivative we start by applying the chain rule and
+우리가 이것을 파생물로 작성하면 체인 규칙을 적용하고
+36:34
+use we start by applying the chain rule backwards from the loss function through
+우리는 손실 함수에서 뒤로 체인 규칙을 뒤로 적용하여 시작합니다.
+36:40
+the output okay so we start with the loss function here and we specifically decompose
+출력 괜찮아서 여기서 손실 함수로 시작하고 구체적으로 분해합니다.
+36:45
+dj dw2 into two terms we're going to decompose that into
+DJ DW2는 두 가지 용어로
+36:50
+dj dy multiplied by d y d w two right so we're just applying the chain rule to
+dj dy는 d y d w 두 권을 곱하므로 체인 규칙을
+36:56
+decompose the left hand side into two gradients that we do have access to
+왼쪽을 우리가 액세스 할 수있는 두 개의 그라디언트로 분해
+37:01
+now this is possible because y is only dependent on the previous layer now let's suppose
+이제 y는 이전 레이어에만 의존하기 때문에 이제 가능합니다.
+37:08
+we want to compute the gradients of the weight before w2 which in this case is w1 well now we've replaced w2 with w1 on
+W2 이전의 중량의 구배를 계산하려고합니다.이 경우 W1입니다. 이제 W2를 W1로 교체했습니다.
+37:15
+the left hand side and then we need to apply the chain rule one more time recursively right so we take this
+왼쪽과 우리는 체인 규칙을 한 번 더 재귀 적으로 적용해야하므로 우리는 이것을 취합니다.
+37:21
+equation again and we need to apply the chain rule to the right hand side on the the red highlighted portion and
+방정식을 다시 한 번, 우리는 체인 규칙을 빨간색 강조 부분의 오른쪽에 적용하고
+37:27
