@@ -6,7 +6,7 @@ pip install tqdm
 
 * File path must be edited. 
 
-- 보통 유튜브 자동생성 자막은 (str + "\n" timestamp + "\n")으로 되어있습니다.
-- 자동생성 자막을 모두 복사해 {.txt}파일로 저장한 뒤, 이용하면 됩니다.
+- 보통 유튜브 자동생성 자막은 (str + "\n" + timestamp + "\n")으로 되어있습니다.
+- 자동생성 자막을 모두 복사해 {.txt} 파일로 저장한 뒤, 이용하면 됩니다.
 
 Thank you. - LEEJIHO

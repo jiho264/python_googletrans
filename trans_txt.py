@@ -19,8 +19,7 @@ for _str in pbar:
         result.write(_str + "\n")
         continue
     _outStr = translator.translate(_str, dest='ko', src='en')
-    result.write(_outStr.text)
-    result.write("\n")
+    result.write(_str + "\n" + _outStr.text + "\n")
     print(_outStr.text)
 # SAVE...
 target.close()
